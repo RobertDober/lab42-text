@@ -28,5 +28,15 @@ describe Lab42::Text::SimpleBox do
           "***************",
       ]
     end
+
+    it "makes a commentbox" do
+      expect( subject.render( border: "*", left_corner: "#", lhs_border: "#" ) ).to eq [
+          "#**************",
+          "# Line One    *",
+          "#    Line Two *",
+          "#  Line Three *",
+          "#**************",
+      ]
+    end
   end # context "simplest case"
 end # describe Lab42::Text::SimpleBox
