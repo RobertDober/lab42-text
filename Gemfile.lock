@@ -1,9 +1,15 @@
+PATH
+  remote: .
+  specs:
+    lab42_text (0.0.1)
+      lab42_core (~> 0.0.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.1.0)
     diff-lcs (1.2.5)
-    lab42_core (0.0.6)
+    lab42_core (0.0.7)
     method_source (0.8.2)
     pry (0.9.12.4)
       coderay (~> 1.0)
@@ -23,6 +29,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  lab42_core
-  pry
-  rspec
+  lab42_text!
+  pry (~> 0.9.12)
+  rspec (~> 2.14)
